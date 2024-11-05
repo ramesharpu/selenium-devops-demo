@@ -29,7 +29,7 @@ public class BasicValidation {
 		options.addArguments("--headless");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 
 		driver.get("https://www.facebook.com");
 	}
